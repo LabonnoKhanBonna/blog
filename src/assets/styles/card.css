@@ -1,0 +1,15 @@
+.card-img-top{
+    height: 500px;
+    width: 1000px;
+
+}
+.card{
+    align-items: center;
+}
+.card-body{
+    padding-right: 25%;
+    padding-left: 25%;
+}
+.Cardbtn{
+    border-radius:20px;
+}

@@ -1,5 +1,12 @@
 .AboutCard{
     display: flex;
+    justify-content: space-evenly;
 
 }
-
+.AboutCard img{
+    height: 250px;
+    width: fit-content;
+}
+.AboutCard button{
+    display:none !important;
+}

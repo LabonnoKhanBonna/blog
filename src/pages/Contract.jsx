@@ -1,4 +1,5 @@
 import '../assets/styles/contracts.css';
+import Pagination from "../components/Pagination";
 function Contract (){
     return(
         <div className="ContractSection">
@@ -56,6 +57,7 @@ function Contract (){
                     <button type="submit" className="btn btn-primary">Sign in</button>
                 </div>
             </form>
+            <Pagination />
         </div>
     )
 }

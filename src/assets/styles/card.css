@@ -5,6 +5,7 @@
 }
 .card{
     align-items: center;
+    border: none;
 }
 .card-body{
     padding-right: 25%;
@@ -12,4 +13,8 @@
 }
 .Cardbtn{
     border-radius:20px;
+}
+
+.rounded {
+    border-radius:250px !important;
 }

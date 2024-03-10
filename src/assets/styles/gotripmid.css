@@ -1,0 +1,40 @@
+.header{
+    text-align: center;
+    margin-top: 50px;
+}
+.header h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.header h3{
+    color:#3fd0d4;
+    font-size: 30px;
+}
+.gotripCard{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gotripCard img{
+    height: 500px;
+    width: fit-content;
+    object-fit: cover;
+    margin-bottom:0px;
+}
+.gotripCard img:hover{
+    /* Add desired styles for hover effect */
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    transform: scale(1.1);
+}
+
+.gotripCard button{
+    display:none !important;
+}
+.gotripCard p{
+    display: none;
+}
+.card.rounded {
+    border-radius: 50%; /* Add any rounded styles you want */
+}

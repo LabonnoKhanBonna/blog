@@ -1,0 +1,18 @@
+/*.pageArrange{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    position: fixed;*/
+/*    bottom: 20px; !* Adjust this value as needed *!*/
+/*    width: 100%;*/
+/*}*/
+/*
+.
+.linkButton{*/
+
+/*}*/
+.pg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

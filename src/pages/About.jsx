@@ -5,6 +5,10 @@ import Person4 from "/home/labonno/projects/blog/src/assets/images/person4.jpg";
 import '../assets/styles/about.css';
 import React, {useEffect, useState} from 'react';
 import Card from "../components/Card";
+import Pagination from "../components/Pagination";
+import Accordian from "../components/Accordian";
+import Modals from "bootstrap/js/src/modal";
+
 function About() {
     // useEffect(() => {
     //     setTest('test again')
@@ -31,20 +35,23 @@ function About() {
 
         },
 
-    ];
-    return(
+    ];    return(
+
         <div>
             <h3 className="header">About</h3>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, alias amet animi architecto assumenda atque aut culpa dolore eius eum ex inventore ipsam laboriosam magni maiores maxime nostrum pariatur porro quis ratione soluta unde veniam voluptates! A amet aspernatur deserunt doloremque eligendi harum labore, molestiae, omnis pariatur placeat quo veritatis.</p>
             </div>
-            <div className="AboutCard">
+            <div className="AboutCard ">
+
             {AboutList.map((data, index) => (
                 <React.Fragment key={index}>
                     <Card data={data}/>
                 </React.Fragment>
             ))}
             </div>
+            <Accordian />
+          <Pagination />
 
         </div>
     )

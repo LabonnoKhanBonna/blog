@@ -6,33 +6,64 @@ import About from './pages/About';
 import './assets/app.css';
 import Contract from "./pages/Contract";
 import Practice from "./pages/Practice";
+import Pagination from "./components/Pagination";
+import GoTrip from "./pages/GoTrip";
+import Blogs from "./pages/Practice";
+import Desnitations from "./pages/Desnitations";
+import SeaDestination from "./pages/SeaDestination";
+import HillDestination from "./pages/HillDestination";
+import CityDestinations from "./pages/CityDestinations";
+import ForestDestination from "./pages/ForestDestination";
+import Login from "./pages/Login";
 function App() {
     return (
+        <div>
         <Router>
             <div >
                 <ul className="unorderLine">
                     <li className="linkItem">
-                        <Link to="/Home">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="linkItem">
-                        <Link to="/About">About</Link>
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="linkItem">
-                        <Link to="/Contract">Contract Us</Link>
+                        <Link to="/contract">Contract Us</Link>
                     </li>
                     <li className="linkItem">
-                        <Link to="/Practice">Practice</Link>
+                        <Link to="/practice">Practice</Link>
+                    </li>
+                    <li className="linkItem">
+                        <Link to="/gotrip"><span>Go</span> Trip</Link>
+                    </li>
+                    <li className="linkItem">
+                        <Link to="desnitations"> Desnitations</Link>
+                    </li>
+                    <li className="linkItem">
+                        <Link to="/login">Log in</Link>
                     </li>
                 </ul>
 
                 <Routes>
-                    <Route path="/Home" element={<Home/>}/>
-                    <Route path="/About" element={<About />} />
-                    <Route path="/Contract" element={<Contract />} />
-                    <Route path="/Practice" element={<Practice />} />
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/about" element={<About />} />
+                    <Route path="/practice" element={<Practice />} />
+                    <Route path="/contract" element={<Contract />} />
+                    <Route path="/gotrip" element={<GoTrip />} />
+                    <Route path="/desnitations" element={<Desnitations />} />
+                    <Route path="/seadestination" element={<SeaDestination />} />
+                    <Route path="/hilldestination" element={<HillDestination />} />
+                    <Route path="/citydestination" element={<CityDestinations />} />
+                    <Route path="/forestdestination" element={<ForestDestination />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
+
+
             </div>
         </Router>
+            {/*<Pagination />*/}
+            </div>
+
     );
 }
 

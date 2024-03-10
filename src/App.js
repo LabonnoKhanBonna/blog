@@ -8,12 +8,7 @@ import Contract from "./pages/Contract";
 import Practice from "./pages/Practice";
 import Pagination from "./components/Pagination";
 import GoTrip from "./pages/GoTrip";
-import Blogs from "./pages/Practice";
-import Desnitations from "./pages/Desnitations";
-import SeaDestination from "./pages/SeaDestination";
-import HillDestination from "./pages/HillDestination";
-import CityDestinations from "./pages/CityDestinations";
-import ForestDestination from "./pages/ForestDestination";
+import Destnitation from "./pages/Destination";
 import Login from "./pages/Login";
 import BlogDetail from "./pages/details";
 function App() {
@@ -38,7 +33,7 @@ function App() {
                         <Link to="/gotrip"><span>Go</span> Trip</Link>
                     </li>
                     <li className="linkItem">
-                        <Link to="desnitations"> Desnitations</Link>
+                        <Link to="destination"> Destnitation</Link>
                     </li>
                     <li className="linkItem">
                         <Link to="/login">Log in</Link>
@@ -52,7 +47,7 @@ function App() {
                     <Route path="/contract" element={<Contract />} />
                     <Route path="/gotrip" element={<GoTrip />} />
                     <Route path="/blog/:id" element={<BlogDetail />} />
-                    <Route path="/destinations" element={<Desnitations />}></Route>
+                    <Route path="/destination" element={<Destnitation />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
 

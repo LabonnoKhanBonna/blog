@@ -1,7 +1,8 @@
 import {useParams} from "react-router-dom";
 import {destinationData} from "../utils/data";
 import {useEffect, useState} from "react";
-
+import "../assets/styles/destination.css"
+import AddDetail from "./AddDetail";
 
 
 export default function BlogDetail () {
@@ -18,6 +19,19 @@ export default function BlogDetail () {
 
     console.log(data)
     return (
-        <>{data?.heading}</>
+        <>
+            {data && (
+                <div className="m-5">
+                    <h1>{data.heading}</h1>
+                    <img className="  px-5 py-3 w-100" src={data.imageSrc} alt={data.heading} /> {/* Access imageSrc instead
+                     of image */}
+                    <p className="p-5">{data.details}</p>
+                    <div>
+
+                    </div>
+
+                </div>
+            )}
+        </>
     )
 }

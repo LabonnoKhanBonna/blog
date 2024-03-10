@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleDown, faDownload, faFaceAngry, faSearch} from '@fortawesome/free-solid-svg-icons';
 
 import "../assets/styles/detinationContainer.css"
-import Desnitations from "../pages/Desnitations";
+import Desnitations from "../pages/Destination";
 
 function DestinationContain(props){
     const { imageSrc,heading ,  details, id } = props.data;

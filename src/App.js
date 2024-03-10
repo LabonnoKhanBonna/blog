@@ -15,6 +15,7 @@ import HillDestination from "./pages/HillDestination";
 import CityDestinations from "./pages/CityDestinations";
 import ForestDestination from "./pages/ForestDestination";
 import Login from "./pages/Login";
+import BlogDetail from "./pages/details";
 function App() {
     return (
         <div>
@@ -50,11 +51,8 @@ function App() {
                     <Route path="/practice" element={<Practice />} />
                     <Route path="/contract" element={<Contract />} />
                     <Route path="/gotrip" element={<GoTrip />} />
-                    <Route path="/desnitations" element={<Desnitations />} />
-                    <Route path="/seadestination" element={<SeaDestination />} />
-                    <Route path="/hilldestination" element={<HillDestination />} />
-                    <Route path="/citydestination" element={<CityDestinations />} />
-                    <Route path="/forestdestination" element={<ForestDestination />} />
+                    <Route path="/blog/:id" element={<BlogDetail />} />
+                    <Route path="/destinations" element={<Desnitations />}></Route>
                     <Route path="/login" element={<Login />} />
                 </Routes>
 

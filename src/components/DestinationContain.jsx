@@ -7,7 +7,7 @@ import "../assets/styles/detinationContainer.css"
 import Desnitations from "../pages/Desnitations";
 
 function DestinationContain(props){
-    const { imageSrc,heading ,  details, path } = props.data;
+    const { imageSrc,heading ,  details, id } = props.data;
 
 
     return(
@@ -15,7 +15,7 @@ function DestinationContain(props){
             <div className="desContain" >
                 <div className="desCard">
                     <img className="desImage" src={imageSrc} /> </div>
-                <Link to={path}>
+                <Link to={`/blog/${id}`}>
                     <h1 className="desCardTitle py-3 text-info-emphasis">{heading}</h1>
                 </Link>
                     <p className="desCardPara">{details}</p>
